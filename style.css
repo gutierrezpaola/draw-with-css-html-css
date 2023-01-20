@@ -1,0 +1,297 @@
+:root {
+    --body: rgb(246, 232, 71);
+    --eyes: #43c3f2;
+    --white: white;
+    --cheek: #d65b39;
+    --spore: #b6b817;
+    --border: #221e1f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.face {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--body);
+}
+
+.left-eye,
+.right-eye {
+    position: absolute;
+    width: 193px;
+    height: 190px;
+    background-color: var(--white);
+    border: 4px solid var(--border);
+    border-radius: 50%;
+}
+
+.left-eye {
+    top: 78px;
+    left: 56px;
+}
+
+.right-eye {
+    top: 76px;
+    left: 252px;
+}
+
+.left-pupil,
+.right-pupil {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: var(--border);
+    border-radius: 50%;
+}
+
+.left-pupil {
+    top: 167px;
+    left: 167px;
+}
+
+.right-pupil {
+    top: 166px;
+    left: 304px;
+}
+
+.left-iris,
+.right-iris {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    background-color: var(--eyes);
+    border: 5px solid var(--border);
+    border-radius: 50%;
+}
+
+.left-iris {
+    top: 149px;
+    left: 149px;
+}
+
+.right-iris {
+    top: 148px;
+    left: 287px;
+}
+
+.eyelash1,
+.eyelash2,
+.eyelash3,
+.eyelash4,
+.eyelash5,
+.eyelash6 {
+    position: absolute;
+    width: 14px;
+    height: 40px;
+    background-color: var(--border);
+}
+
+.eyelash1 {
+    top: 60px;
+    left: 82px;
+    transform: rotate(-28deg);
+}
+
+.eyelash2 {
+    top: 39px;
+    left: 140px;
+    transform: rotate(-4deg);
+}
+
+.eyelash3 {
+    top: 47px;
+    left: 193px;
+    transform: rotate(25deg);
+}
+
+.eyelash4 {
+    top: 48px;
+    left: 298px;
+    transform: rotate(-24deg);
+}
+
+.eyelash5 {
+    top: 39px;
+    left: 352px;
+    transform: rotate(5deg);
+}
+
+.eyelash6 {
+    top: 53px;
+    left: 405px;
+    transform: rotate(35deg);
+}
+
+.nose {
+    position: absolute;
+    width: 65px;
+    height: 75px;
+    border: var(--border) 6px solid;
+    top: 224px;
+    left: 215px;
+    border-radius: 50% 50% 50% 50%;
+    border-bottom: 0;
+    background-color: var(--body);
+}
+
+.left-cheek,
+.right-cheek {
+    position: absolute;
+    height: 65px;
+    border: var(--cheek) 7px solid;
+    border-bottom: none;
+    background-color: var(--body);
+}
+
+.left-cheek {
+    width: 105px;
+    top: 210px;
+    left: -8px;
+    transform: rotate(-12deg);
+    border-radius: 100% 120% 80% 90%;
+}
+
+.right-cheek {
+    width: 100px;
+    top: 220px;
+    right: 4px;
+    transform: rotate(2deg);
+    border-radius: 170% 150% 120% 120%;
+}
+
+.freckle1,
+.freckle2,
+.freckle3,
+.freckle4,
+.freckle5,
+.freckle6 {
+    position: absolute;
+    background-color: var(--cheek);
+    width: 12px;
+    height: 9px;
+    border-radius: 59%;
+}
+
+.freckle1 {
+    top: 238px;
+    left: 15px;
+}
+
+.freckle2 {
+    top: 243px;
+    left: 42px;
+}
+
+.freckle3 {
+    top: 228px;
+    left: 65px;
+}
+
+.freckle4 {
+    top: 243px;
+    right: 78px;
+}
+
+.freckle5 {
+    top: 252px;
+    right: 55px;
+}
+
+.freckle6 {
+    top: 245px;
+    right: 32px;
+}
+
+.mouth {
+    position: absolute;
+    width: 360px;
+    height: 150px;
+    top: 200px;
+    left: 64px;
+    border-bottom: solid 9px var(--border);
+    border-radius: 0 0 100% 100%;
+    z-index: 1;
+}
+
+.left-tooth,
+.right-tooth {
+    position: absolute;
+    width: 54px;
+    height: 45px;
+    background-color: var(--white);
+    border: 6px solid var(--border);
+    border-top: none;
+    top: 350px;
+    left: 161px;
+}
+
+.right-tooth {
+    top: 350px;
+    left: 256px;
+}
+
+.spore1,
+.spore2,
+.spore3,
+.spore4,
+.spore5 {
+    position: absolute;
+    background-color: var(--spore);
+    border-radius: 50%;
+}
+
+.spore1,
+.spore2 {
+    width: 54px;
+    height: 66px;
+    transform: rotate(14deg);
+}
+
+.spore1 {
+    bottom: 54px;
+    right: 13px;
+}
+
+.spore2 {
+    bottom: 1px;
+}
+
+.spore3,
+.spore4 {
+    transform: rotate(20deg);
+    right: 1px;
+}
+
+.spore3 {
+    width: 30px;
+    height: 40px;
+    bottom: 1px;
+}
+
+.spore4,
+.spore5 {
+    width: 40px;
+    height: 50px;
+}
+
+.spore4 {
+    top: 1px;
+}
+
+.spore5 {
+    left: 0;
+    top: 40px;
+    transform: rotate(-10deg);
+}
